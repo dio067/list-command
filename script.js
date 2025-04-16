@@ -7,7 +7,6 @@ fs.readdir(process.cwd(), async (err, filenames) => {
         console.log(err);
     } 
 
-    
 	for (let filename of filenames) {
 		try {
 			const stat = await fs.promises.lstat(filename);
